@@ -1,0 +1,21 @@
+{
+  "name": "casbin-node",
+  "version": "1.1.16",
+  "description": "casbin node",
+  "main": "casbin-node.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "node-red": {
+    "nodes": {
+      "casbin": "casbin-node.js"
+    }
+  },
+  "author": "Akshay Misal",
+  "license": "ISC",
+  "dependencies": {
+    "casbin": "^4.1.1",
+    "casbin-mongoose-adapter": "^2.1.0",
+    "validate-fields": "^5.1.1"
+  }
+}

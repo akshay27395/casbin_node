@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    RED.nodes.registerType('casbin-node', {
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "file.png",
+        label: function () {
+            return this.name || "casbin-node";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="casbin-node">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-subject"><i class="icon-tag"></i> Sub</label>
+        <input type="text" id="node-input-subject" placeholder="sub">
+    </div>
+    <div class="form-row">
+        <label for="node-input-object"><i class="icon-tag"></i> Object</label>
+        <input type="text" id="node-input-object" placeholder="object">
+    </div>
+    <div class="form-row">
+        <label for="node-input-action"><i class="icon-tag"></i> Action</label>
+        <input type="text" id="node-input-action" placeholder="action">
+    </div>
+    <div class="form-row">
+        <label for="node-input-method"><i class="icon-tag"></i> Method</label>
+        <input type="text" id="node-input-method" placeholder="method">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="casbin-node">
+    <p>A simple node that converts the message payloads into all casbin characters</p>
+</script>

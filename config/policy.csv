@@ -1,0 +1,10 @@
+
+p, maker-vijay, any, vijay,  get
+p, checker-vijay, any, vijay, get
+
+g, akshay, maker-any
+g, vinish, checker-vijay
+g, batman, checker
+g, batman, maker
+g, vijay, maker-vijay
+g, vijay, checker-vijay
